@@ -7,21 +7,22 @@ import { RestaurantComponent } from './components/restaurant/restaurant.componen
 
 const routes: Routes = [
   {
-    path:'plats',
-    component:PlatsComponent
+    path: 'plats',
+    component: PlatsComponent
   },
   {
-    path:'home',
-    component:HomeComponent
+    path: 'home',
+    component: HomeComponent
   },
   {
-    path:'restaurant',
-    component:RestaurantComponent
+    path: 'restaurant',
+    component: RestaurantComponent
   },
-{
-  redirectTo: '/home',
-  pathMatch: 'full'
-}
+  {
+    path: '',
+    redirectTo: '/home',
+    pathMatch: 'full'
+  }
 ];
 
 @NgModule({
